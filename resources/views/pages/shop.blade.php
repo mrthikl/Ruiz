@@ -9,7 +9,9 @@
                 <!-- breadcrumb-list start -->
                 <ul class="breadcrumb-list">
                     <li class="breadcrumb-item"><a href="/">Home</a></li>
-                    <li class="breadcrumb-item active">Shop left sidebar</li>
+                    <li class="breadcrumb-item active">Shop 
+                        
+                    </li>
                 </ul>
                 <!-- breadcrumb-list end -->
             </div>

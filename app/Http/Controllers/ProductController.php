@@ -84,4 +84,14 @@ class ProductController extends Controller
         Product::find($product_id)->update(['product_status' => 0]);
         return Redirect::to('/list-products');
     }
+    // home
+    public function detail_product($product_id)
+    {
+        $detail_product = Product::find($product_id)->first();
+        $list_categories = Category::where('category_status', '0')->orderby('category_id', 'desc')->get();
+        $list_brands = Brand::where('brand_status', '0')->orderby('brand_id', 'desc')->get();
+        $list_products = Product::inRandomOrder()->get();
+        $list_products_new = Product::orderby('brand_id', 'desc')->get();
+        return view('pages.detail-product', compact('list_categories', 'list_brands', 'list_products', 'list_products_new', 'detail_product'));
+    }
 }

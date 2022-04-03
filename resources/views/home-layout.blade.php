@@ -30,8 +30,8 @@
 
     <!-- Vendor & Plugins CSS (Please remove the comment from below vendor.min.css & plugins.min.css for better website load performance and remove css files from avobe) -->
     <!--
-    <script src="js/vendor/vendor.min.js"></script>
-    <script src="js/plugins/plugins.min.js"></script>
+    <script src="{{('frontend/js/vendor/vendor.min.js')}}"></script>
+    <script src="{{('frontend/js/plugins/plugins.min.js')}}"></script>
     -->
 
     <!-- Main Style CSS (Please use minify version for better website load performance) -->
@@ -69,37 +69,37 @@
                                     <!-- Product Details Left -->
                                     <div class="product-large-slider">
                                         <div class="pro-large-img">
-                                            <img src="images/product/product-01.png" alt="product-details" />
+                                            <img src="{{('frontend/images/product/product-01.png')}}" alt="product-details" />
                                         </div>
                                         <div class="pro-large-img">
-                                            <img src="images/product/product-02.png" alt="product-details" />
+                                            <img src="{{('frontend/images/product/product-02.png')}}" alt="product-details" />
                                         </div>
                                         <div class="pro-large-img ">
-                                            <img src="images/product/product-03.png" alt="product-details" />
+                                            <img src="{{('frontend/images/product/product-03.png')}}" alt="product-details" />
                                         </div>
                                         <div class="pro-large-img">
-                                            <img src="images/product/product-04.png" alt="product-details" />
+                                            <img src="{{('frontend/images/product/product-04.png')}}" alt="product-details" />
                                         </div>
                                         <div class="pro-large-img">
-                                            <img src="images/product/product-05.png" alt="product-details" />
+                                            <img src="{{('frontend/images/product/product-05.png')}}" alt="product-details" />
                                         </div>
 
                                     </div>
                                     <div class="product-nav">
                                         <div class="pro-nav-thumb">
-                                            <img src="images/product/product-01.png" alt="product-details" />
+                                            <img src="{{('frontend/images/product/product-01.png')}}" alt="product-details" />
                                         </div>
                                         <div class="pro-nav-thumb">
-                                            <img src="images/product/product-02.png" alt="product-details" />
+                                            <img src="{{('frontend/images/product/product-02.png')}}" alt="product-details" />
                                         </div>
                                         <div class="pro-nav-thumb">
-                                            <img src="images/product/product-03.png" alt="product-details" />
+                                            <img src="{{('frontend/images/product/product-03.png')}}" alt="product-details" />
                                         </div>
                                         <div class="pro-nav-thumb">
-                                            <img src="images/product/product-04.png" alt="product-details" />
+                                            <img src="{{('frontend/images/product/product-04.png')}}" alt="product-details" />
                                         </div>
                                         <div class="pro-nav-thumb">
-                                            <img src="images/product/product-05.png" alt="product-details" />
+                                            <img src="{{('frontend/images/product/product-05.png')}}" alt="product-details" />
                                         </div>
                                     </div>
                                     <!--// Product Details Left -->
@@ -190,8 +190,8 @@
 
     <!-- Vendor & Plugins JS (Please remove the comment from below vendor.min.js & plugins.min.js for better website load performance and remove js files from avobe) -->
     <!--
-<script src="js/vendor/vendor.min.js"></script>
-<script src="js/plugins/plugins.min.js"></script>
+<script src="{{('frontend/js/vendor/vendor.min.js')}}"></script>
+<script src="{{('frontend/js/plugins/plugins.min.js')}}"></script>
 -->
 
     <!-- Main JS -->

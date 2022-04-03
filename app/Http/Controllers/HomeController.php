@@ -43,7 +43,7 @@ class HomeController extends Controller
 
     public function shop()
     {
-        $list_products = Product::where('product_status', '0')->orderby('product_id', 'desc')->get();
+        $list_products = Product::where('product_status', '0')->isRandomOrder()->get();
         $list_categories = Category::where('category_status', '0')->orderby('category_id', 'desc')->get();
         $list_brands = Brand::where('brand_status', '0')->orderby('brand_id', 'desc')->get();
         return view('pages.shop', compact('list_categories', 'list_brands', 'list_products'));

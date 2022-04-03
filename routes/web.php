@@ -23,6 +23,7 @@ Route::get('/', [HomeController::class, 'index']);
 Route::get('/index', [HomeController::class, 'index']);
 Route::get('/home', [HomeController::class, 'index']);
 Route::get('/shop', [HomeController::class, 'shop']);
+Route::get('/detail-product/{product_id}', [ProductController::class, 'detail_product']);
 
 // list products by category
 Route::get('/shop/category/{category_id}', [CategoryController::class, 'category_product']);
