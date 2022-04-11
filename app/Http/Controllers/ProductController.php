@@ -87,7 +87,10 @@ class ProductController extends Controller
     // home
     public function detail_product($product_id)
     {
-        $detail_product = Product::find($product_id)->first();
+        $detail_product = Product::join('categories', 'categories.category_id', '=', 'products.category_id')
+        ->join('brands', 'brands.brand_id', '=', 'products.brand_id')
+        ->where('products.product_id', $product_id)
+        ->first();
         $list_categories = Category::where('category_status', '0')->orderby('category_id', 'desc')->get();
         $list_brands = Brand::where('brand_status', '0')->orderby('brand_id', 'desc')->get();
         $list_products = Product::inRandomOrder()->get();

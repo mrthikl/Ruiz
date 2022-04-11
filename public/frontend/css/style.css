@@ -3136,8 +3136,11 @@ only screen and (max-width: 767px) {
     width: 100%;
 }
 
-.single-product-area .product-thumb .action-links a {
+.single-product-area .product-thumb .action-links a,
+.single-product-area .product-thumb .action-links button {
     background-color: #f1f1f1;
+    outline: none;
+    border: none;
     border-radius: 100%;
     color: #434343;
     display: inline-block;
@@ -3151,17 +3154,20 @@ only screen and (max-width: 767px) {
     transition: all 0.3s ease-in-out;
 }
 
-.single-product-area .product-thumb .action-links a:hover {
+.single-product-area .product-thumb .action-links a:hover,
+.single-product-area .product-thumb .action-links button:hover {
     background-color: #c89979;
     color: #fff;
 }
 
-.single-product-area .action-links a {
+.single-product-area .action-links a,
+.single-product-area .action-links button {
     opacity: 0;
     transform: scale(0.8) rotate(-45deg);
 }
 
-.single-product-area:hover .action-links a {
+.single-product-area:hover .action-links a,
+.single-product-area:hover .action-links button {
     opacity: 1;
     transform: scale(1) rotate(0deg);
 }

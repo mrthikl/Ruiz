@@ -91,19 +91,22 @@
                             <img class="primary-image" src="{{('uploads/product/'.$pro->product_image)}}" alt="{{$pro->product_image}}">
                         </a>
                         <div class="label-product label_new">New</div>
-                        <div class="action-links">
-                            <a href="cart.html" class="cart-btn" title="Add to Cart"><i class="icon-basket-loaded"></i></a>
+                        <form action="{{URL::to('/save-cart')}}" method="post" class=" action-links">
+                            @csrf
+                            <input type="hidden" class="input-text" name="quantity" value="1" title="Qty">
+                            <input type="hidden" name="product_id" value="{{$pro->product_id}}">
+                            <button type="submit" class="cart-btn" type="submit"><i class="icon-basket-loaded"></i></button>
                             <a href="wishlist.html" class="wishlist-btn" title="Add to Wish List"><i class="icon-heart"></i></a>
                             <a href="#" class="quick-view" title="Quick View" data-toggle="modal" data-target="#exampleModalCenter"><i class="icon-magnifier icons"></i></a>
-                        </div>
+                        </form>
                     </div>
                     <div class="product-caption">
                         <h4 class="product-name"><a href="{{URL::to('detail-product/'.$pro->product_id)}}">{{$pro->product_name}}</a></h4>
                         <div class="price-box">
                             <span class="new-price">${{$pro->product_price}}</span>
-                           
 
-                          
+
+
                         </div>
                     </div>
                 </div>
@@ -173,11 +176,14 @@
                                         <img class="primary-image" src="{{('uploads/product/'.$pro->product_image)}}" alt="{{$pro->product_image}}">
                                     </a>
                                     <div class="label-product label_new">New</div>
-                                    <div class="action-links">
-                                        <a href="cart.html" class="cart-btn" title="Add to Cart"><i class="icon-basket-loaded"></i></a>
+                                    <form action="{{URL::to('/save-cart')}}" method="post" class=" action-links">
+                                        @csrf
+                                        <input type="hidden" class="input-text" name="quantity" value="1" title="Qty">
+                                        <input type="hidden" name="product_id" value="{{$pro->product_id}}">
+                                        <button type="submit" class="cart-btn" type="submit"><i class="icon-basket-loaded"></i></button>
                                         <a href="wishlist.html" class="wishlist-btn" title="Add to Wish List"><i class="icon-heart"></i></a>
                                         <a href="#" class="quick-view" title="Quick View" data-toggle="modal" data-target="#exampleModalCenter"><i class="icon-magnifier icons"></i></a>
-                                    </div>
+                                    </form>
                                 </div>
                                 <div class="product-caption">
                                     <h4 class="product-name"><a href="{{URL::to('detail-product/'.$pro->product_id)}}">{{$pro->product_name}}</a></h4>
@@ -197,7 +203,7 @@
             <div class="tab-pane fade" id="nav-new" role="tabpanel">
                 <div class="product-carousel-group">
 
-                <div class="row product-active-row-4">
+                    <div class="row product-active-row-4">
                         @foreach ($list_products as $pro)
                         <div class="col-lg-12">
                             <!-- single-product-area start -->
@@ -207,11 +213,14 @@
                                         <img class="primary-image" src="{{('uploads/product/'.$pro->product_image)}}" alt="{{$pro->product_image}}">
                                     </a>
                                     <div class="label-product label_new">New</div>
-                                    <div class="action-links">
-                                        <a href="cart.html" class="cart-btn" title="Add to Cart"><i class="icon-basket-loaded"></i></a>
+                                    <form action="{{URL::to('/save-cart')}}" method="post" class=" action-links">
+                                        @csrf
+                                        <input type="hidden" class="input-text" name="quantity" value="1" title="Qty">
+                                        <input type="hidden" name="product_id" value="{{$pro->product_id}}">
+                                        <button type="submit" class="cart-btn" type="submit"><i class="icon-basket-loaded"></i></button>
                                         <a href="wishlist.html" class="wishlist-btn" title="Add to Wish List"><i class="icon-heart"></i></a>
                                         <a href="#" class="quick-view" title="Quick View" data-toggle="modal" data-target="#exampleModalCenter"><i class="icon-magnifier icons"></i></a>
-                                    </div>
+                                    </form>
                                 </div>
                                 <div class="product-caption">
                                     <h4 class="product-name"><a href="{{URL::to('detail-product/'.$pro->product_id)}}">{{$pro->product_name}}</a></h4>
@@ -230,7 +239,7 @@
             <div class="tab-pane fade" id="nav-bestseller" role="tabpanel">
                 <div class="product-carousel-group">
 
-                <div class="row product-active-row-4">
+                    <div class="row product-active-row-4">
                         @foreach ($list_products as $pro)
                         <div class="col-lg-12">
                             <!-- single-product-area start -->
@@ -240,11 +249,14 @@
                                         <img class="primary-image" src="{{('uploads/product/'.$pro->product_image)}}" alt="{{$pro->product_image}}">
                                     </a>
                                     <div class="label-product label_new">New</div>
-                                    <div class="action-links">
-                                        <a href="cart.html" class="cart-btn" title="Add to Cart"><i class="icon-basket-loaded"></i></a>
+                                    <form action="{{URL::to('/save-cart')}}" method="post" class=" action-links">
+                                        @csrf
+                                        <input type="hidden" class="input-text" name="quantity" value="1" title="Qty">
+                                        <input type="hidden" name="product_id" value="{{$pro->product_id}}">
+                                        <button type="submit" class="cart-btn" type="submit"><i class="icon-basket-loaded"></i></button>
                                         <a href="wishlist.html" class="wishlist-btn" title="Add to Wish List"><i class="icon-heart"></i></a>
                                         <a href="#" class="quick-view" title="Quick View" data-toggle="modal" data-target="#exampleModalCenter"><i class="icon-magnifier icons"></i></a>
-                                    </div>
+                                    </form>
                                 </div>
                                 <div class="product-caption">
                                     <h4 class="product-name"><a href="{{URL::to('detail-product/'.$pro->product_id)}}">{{$pro->product_name}}</a></h4>
@@ -262,7 +274,7 @@
             <div class="tab-pane fade" id="nav-onsale" role="tabpanel">
                 <div class="product-carousel-group">
 
-                <div class="row product-active-row-4">
+                    <div class="row product-active-row-4">
                         @foreach ($list_products as $pro)
                         <div class="col-lg-12">
                             <!-- single-product-area start -->
@@ -272,11 +284,14 @@
                                         <img class="primary-image" src="{{('uploads/product/'.$pro->product_image)}}" alt="{{$pro->product_image}}">
                                     </a>
                                     <div class="label-product label_new">New</div>
-                                    <div class="action-links">
-                                        <a href="cart.html" class="cart-btn" title="Add to Cart"><i class="icon-basket-loaded"></i></a>
+                                    <form action="{{URL::to('/save-cart')}}" method="post" class=" action-links">
+                                        @csrf
+                                        <input type="hidden" class="input-text" name="quantity" value="1" title="Qty">
+                                        <input type="hidden" name="product_id" value="{{$pro->product_id}}">
+                                        <button type="submit" class="cart-btn" type="submit"><i class="icon-basket-loaded"></i></button>
                                         <a href="wishlist.html" class="wishlist-btn" title="Add to Wish List"><i class="icon-heart"></i></a>
                                         <a href="#" class="quick-view" title="Quick View" data-toggle="modal" data-target="#exampleModalCenter"><i class="icon-magnifier icons"></i></a>
-                                    </div>
+                                    </form>
                                 </div>
                                 <div class="product-caption">
                                     <h4 class="product-name"><a href="{{URL::to('detail-product/'.$pro->product_id)}}">{{$pro->product_name}}</a></h4>

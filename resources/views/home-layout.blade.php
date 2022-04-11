@@ -9,7 +9,7 @@
     <meta name="description" content="">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <!-- Favicon -->
-    <link rel="shortcut icon" type="image/x-icon" href="{{('frontend/images/favicon.ico')}}">
+    <link rel="shortcut icon" type="image/x-icon" href="{{URL::to('frontend/images/favicon.ico')}}">
 
     <!-- CSS
 	============================================ -->
@@ -69,37 +69,37 @@
                                     <!-- Product Details Left -->
                                     <div class="product-large-slider">
                                         <div class="pro-large-img">
-                                            <img src="{{('frontend/images/product/product-01.png')}}" alt="product-details" />
+                                            <img src="{{asset('frontend/images/product/product-01.png')}}" alt="product-details" />
                                         </div>
                                         <div class="pro-large-img">
-                                            <img src="{{('frontend/images/product/product-02.png')}}" alt="product-details" />
+                                            <img src="{{asset('frontend/images/product/product-02.png')}}" alt="product-details" />
                                         </div>
                                         <div class="pro-large-img ">
-                                            <img src="{{('frontend/images/product/product-03.png')}}" alt="product-details" />
+                                            <img src="{{asset('frontend/images/product/product-03.png')}}" alt="product-details" />
                                         </div>
                                         <div class="pro-large-img">
-                                            <img src="{{('frontend/images/product/product-04.png')}}" alt="product-details" />
+                                            <img src="{{asset('frontend/images/product/product-04.png')}}" alt="product-details" />
                                         </div>
                                         <div class="pro-large-img">
-                                            <img src="{{('frontend/images/product/product-05.png')}}" alt="product-details" />
+                                            <img src="{{asset('frontend/images/product/product-05.png')}}" alt="product-details" />
                                         </div>
 
                                     </div>
                                     <div class="product-nav">
                                         <div class="pro-nav-thumb">
-                                            <img src="{{('frontend/images/product/product-01.png')}}" alt="product-details" />
+                                            <img src="{{asset('frontend/images/product/product-01.png')}}" alt="product-details" />
                                         </div>
                                         <div class="pro-nav-thumb">
-                                            <img src="{{('frontend/images/product/product-02.png')}}" alt="product-details" />
+                                            <img src="{{asset('frontend/images/product/product-02.png')}}" alt="product-details" />
                                         </div>
                                         <div class="pro-nav-thumb">
-                                            <img src="{{('frontend/images/product/product-03.png')}}" alt="product-details" />
+                                            <img src="{{asset('frontend/images/product/product-03.png')}}" alt="product-details" />
                                         </div>
                                         <div class="pro-nav-thumb">
-                                            <img src="{{('frontend/images/product/product-04.png')}}" alt="product-details" />
+                                            <img src="{{asset('frontend/images/product/product-04.png')}}" alt="product-details" />
                                         </div>
                                         <div class="pro-nav-thumb">
-                                            <img src="{{('frontend/images/product/product-05.png')}}" alt="product-details" />
+                                            <img src="{{asset('frontend/images/product/product-05.png')}}" alt="product-details" />
                                         </div>
                                     </div>
                                     <!--// Product Details Left -->

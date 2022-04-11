@@ -2,9 +2,12 @@
 
 use App\Http\Controllers\HomeController;
 use App\Http\Controllers\AdminController;
+use App\Http\Controllers\UserController;
 use App\Http\Controllers\CategoryController;
 use App\Http\Controllers\BrandController;
 use App\Http\Controllers\ProductController;
+use App\Http\Controllers\CartController;
+use App\Http\Controllers\CheckoutController;
 use Illuminate\Support\Facades\Route;
 
 /*
@@ -25,11 +28,29 @@ Route::get('/home', [HomeController::class, 'index']);
 Route::get('/shop', [HomeController::class, 'shop']);
 Route::get('/detail-product/{product_id}', [ProductController::class, 'detail_product']);
 
+// user
+Route::get('/login', [UserController::class, 'login']);
+Route::get('/logout-user', [UserController::class, 'logout_user']);
+Route::post('/login-user', [UserController::class, 'login_user']);
+Route::post('/register-user', [UserController::class, 'register_user']);
+
 // list products by category
 Route::get('/shop/category/{category_id}', [CategoryController::class, 'category_product']);
 
 // list products by brand
 Route::get('/shop/brand/{brand_id}', [BrandController::class, 'brand_product']);
+
+// cart
+Route::get('/cart', [CartController::class, 'cart']);
+Route::post('/save-cart', [CartController::class, 'save_cart']);
+Route::get('/delete-cart/{cart_id}', [CartController::class, 'delete_cart']);
+
+// checkout
+Route::get('/checkout', [CheckoutController::class, 'checkout'])->middleware('checklogin');
+Route::post('/save-checkout', [CheckoutController::class, 'save_checkout']);
+Route::get('/payment', [CheckoutController::class, 'payment']);
+
+
 
 
 // backend

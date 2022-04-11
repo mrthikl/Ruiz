@@ -39,15 +39,19 @@
                         <div class="price-box">
                             <span class="new-price">${{$detail_product->product_price}}</span>
                         </div>
+                        <p>Brand: {{$detail_product->brand_name}}</p>
+                        <p>Category: {{$detail_product->category_name}}</p>
                         <p>{{$detail_product->product_content}}</p>
 
                         <div class="single-add-to-cart">
-                            <form action="#" class="cart-quantity d-flex">
+                            <form action="{{URL::to('/save-cart')}}" method="post" class="cart-quantity d-flex">
+                                @csrf
                                 <div class="quantity">
                                     <div class="cart-plus-minus">
                                         <input type="number" class="input-text" name="quantity" value="1" title="Qty">
                                     </div>
                                 </div>
+                                <input type="hidden" name="product_id" value="{{$detail_product->product_id}}">
                                 <button class="add-to-cart" type="submit">Add To Cart</button>
                             </form>
                         </div>
@@ -182,11 +186,14 @@
                                 <img class="primary-image" src="{{asset('uploads/product/'.$pro->product_image)}}" alt="{{$pro->product_image}}">
                             </a>
                             <div class="label-product label_new">New</div>
-                            <div class="action-links" style="display: flex;align-items: center;justify-content: center; gap: 10px">
-                                <a href="cart.html" class="cart-btn" title="Add to Cart" style="display: flex;align-items: center;justify-content: center;"><i class="icon-basket-loaded"></i></a>
-                                <a href="wishlist.html" class="wishlist-btn" title="Add to Wish List" style="display: flex;align-items: center;justify-content: center;"><i class="icon-heart"></i></a>
-                                <a href="#" class="quick-view" title="Quick View" data-toggle="modal" data-target="#exampleModalCenter" style="display: flex;align-items: center;justify-content: center;"><i class="icon-magnifier icons"></i></a>
-                            </div>
+                            <form action="{{URL::to('/save-cart')}}" method="post" class=" action-links">
+                                @csrf
+                                <input type="hidden" class="input-text" name="quantity" value="1" title="Qty">
+                                <input type="hidden" name="product_id" value="{{$pro->product_id}}">
+                                <button type="submit" class="cart-btn" type="submit"><i class="icon-basket-loaded"></i></button>
+                                <a href="wishlist.html" class="wishlist-btn" title="Add to Wish List"><i class="icon-heart"></i></a>
+                                <a href="#" class="quick-view" title="Quick View" data-toggle="modal" data-target="#exampleModalCenter"><i class="icon-magnifier icons"></i></a>
+                            </form>
                         </div>
                         <div class="product-caption">
                             <h4 class="product-name"><a href="{{URL::to('detail-product/'.$pro->product_id)}}">{{$pro->product_name}}</a></h4>
@@ -219,11 +226,14 @@
                                 <img class="primary-image" src="{{asset('uploads/product/'.$pro->product_image)}}" alt="{{$pro->product_image}}">
                             </a>
                             <div class="label-product label_new">New</div>
-                            <div class="action-links" style="display: flex;align-items: center;justify-content: center; gap: 10px">
-                                <a href="cart.html" class="cart-btn" title="Add to Cart" style="display: flex;align-items: center;justify-content: center;"><i class="icon-basket-loaded"></i></a>
-                                <a href="wishlist.html" class="wishlist-btn" title="Add to Wish List" style="display: flex;align-items: center;justify-content: center;"><i class="icon-heart"></i></a>
-                                <a href="#" class="quick-view" title="Quick View" data-toggle="modal" data-target="#exampleModalCenter" style="display: flex;align-items: center;justify-content: center;"><i class="icon-magnifier icons"></i></a>
-                            </div>
+                            <form action="{{URL::to('/save-cart')}}" method="post" class=" action-links">
+                                @csrf
+                                <input type="hidden" class="input-text" name="quantity" value="1" title="Qty">
+                                <input type="hidden" name="product_id" value="{{$pro->product_id}}">
+                                <button type="submit" class="cart-btn" type="submit"><i class="icon-basket-loaded"></i></button>
+                                <a href="wishlist.html" class="wishlist-btn" title="Add to Wish List"><i class="icon-heart"></i></a>
+                                <a href="#" class="quick-view" title="Quick View" data-toggle="modal" data-target="#exampleModalCenter"><i class="icon-magnifier icons"></i></a>
+                            </form>
                         </div>
                         <div class="product-caption">
                             <h4 class="product-name"><a href="{{URL::to('detail-product/'.$pro->product_id)}}">{{$pro->product_name}}</a></h4>

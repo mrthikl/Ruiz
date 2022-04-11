@@ -26,10 +26,14 @@
                 <div class="col-lg-6">
                     <div class="top-info-wrap text-right">
                         <ul class="my-account-container">
-                            <li><a href="my-account.html">My account</a></li>
-                            <li><a href="cart.html">Cart</a></li>
-                            <li><a href="wishlist.html">Wishlist</a></li>
-                            <li><a href="checkout.html">Checkout</a></li>
+                            <li><a href="{{URL::to('/cart')}}">Cart</a></li>
+                            <li><a href="{{URL::to('/checkout')}}">Checkout</a></li>
+                            @if (Session::get('user_id'))
+                            <li> <a href="">{{{Session::get('user_name')}}}</a> </li>
+                            <li> <a href="{{URL::to('/logout-user')}}">logout</a> </li>
+                            @else
+                            <li> <a href="{{URL::to('/login')}}">Login</a> </li>
+                            @endif
                         </ul>
                     </div>
                 </div>
@@ -45,7 +49,7 @@
             <div class="row align-items-center">
                 <div class="col-lg-3 col-md-4 col-5">
                     <div class="logo-area">
-                        <a href="/"><img src="{{('frontend/images/logo/logo.png')}}" alt=""></a>
+                        <a href="/"><img src="{{asset('frontend/images/logo/logo.png')}}" alt=""></a>
                     </div>
                 </div>
                 <div class="col-lg-6">
@@ -78,53 +82,42 @@
                 </div>
                 <div class="col-lg-3">
                     <div class="right-blok-box text-white d-flex">
-
+                        @php
+                        $cartCollection = Cart::getContent();
+                        @endphp
                         <div class="user-wrap">
-                            <a href="wishlist.html"><span class="cart-total">2</span> <i class="icon-heart"></i></a>
+                            <a href="wishlist.html"><span class="cart-total">1</span> <i class="icon-heart"></i></a>
                         </div>
-
+                        
                         <div class="shopping-cart-wrap">
-                            <a href="#"><i class="icon-basket-loaded"></i><span class="cart-total">2</span></a>
+                            <a href="{{URL::to('/cart')}}"><i class="icon-basket-loaded"></i><span class="cart-total">{{Cart::getTotalQuantity()}}</span></a>
                             <ul class="mini-cart">
+                                @foreach($cartCollection as $cart)
                                 <li class="cart-item">
                                     <div class="cart-image">
-                                        <a href="product-details.html"><img alt="" src="{{('frontend/images/product/product-02.png')}}"></a>
+                                        <a href="{{URL::to('/detail-product'.$cart->id)}}"><img alt="" src="{{asset('uploads/product/'.$cart->attributes->image)}}"></a>
                                     </div>
                                     <div class="cart-title">
-                                        <a href="product-details.html">
-                                            <h4>Product Name 01</h4>
+                                        <a href="{{URL::to('/detail-product'.$cart->id)}}">
+                                            <h4>{{$cart->name}}</h4>
                                         </a>
                                         <div class="quanti-price-wrap">
-                                            <span class="quantity">1 ×</span>
-                                            <div class="price-box"><span class="new-price">$130.00</span></div>
+                                            <span class="quantity">{{$cart->quantity}}</span> ×</span>
+                                            <div class="price-box"><span class="new-price">${{$cart->price}}</span></div>
                                         </div>
-                                        <a class="remove_from_cart" href="#"><i class="icon_close"></i></a>
+                                        <a class="remove_from_cart" href="{{URL::to('/delete-cart').'/'.$cart->id}}"><i class="icon_close"></i></a>
                                     </div>
                                 </li>
-                                <li class="cart-item">
-                                    <div class="cart-image">
-                                        <a href="product-details.html"><img alt="" src="{{('frontend/images/product/product-03.png')}}"></a>
-                                    </div>
-                                    <div class="cart-title">
-                                        <a href="product-details.html">
-                                            <h4>Product Name 03</h4>
-                                        </a>
-                                        <div class="quanti-price-wrap">
-                                            <span class="quantity">1 ×</span>
-                                            <div class="price-box"><span class="new-price">$130.00</span></div>
-                                        </div>
-                                        <a class="remove_from_cart" href="#"><i class="icon-trash icons"></i></a>
-                                    </div>
-                                </li>
+                                @endforeach
                                 <li class="subtotal-box">
                                     <div class="subtotal-title">
-                                        <h3>Sub-Total :</h3><span>$ 260.99</span>
+                                        <h3>Sub-Total :</h3><span>${{number_format(Cart::getSubTotal())}}</span>
                                     </div>
                                 </li>
                                 <li class="mini-cart-btns">
                                     <div class="cart-btns">
-                                        <a href="cart.html">View cart</a>
-                                        <a href="checkout.html">Checkout</a>
+                                        <a href="{{URL::to('/cart')}}">View cart</a>
+                                        <a href="{{URL::to('/checkout')}}">Checkout</a>
                                     </div>
                                 </li>
                             </ul>
@@ -168,7 +161,7 @@
 
                 <div class="col-5 col-md-6 d-block d-lg-none">
                     <div class="logo">
-                        <a href="/"><img src="{{('frontend/images/logo/logo.png')}}" alt=""></a>
+                        <a href="/"><img src="{{asset('frontend/images/logo/logo.png')}}" alt=""></a>
                     </div>
                 </div>
 
@@ -185,7 +178,7 @@
                             <ul class="mini-cart">
                                 <li class="cart-item">
                                     <div class="cart-image">
-                                        <a href="product-details.html"><img alt="" src="{{('frontend/images/product/product-02.png')}}"></a>
+                                        <a href="product-details.html"><img alt="" src="{{asset('frontend/images/product/product-02.png')}}"></a>
                                     </div>
                                     <div class="cart-title">
                                         <a href="product-details.html">
@@ -200,9 +193,9 @@
                                 </li>
                                 <li class="cart-item">
                                     <div class="cart-image">
-                                        <a href="product-details.html"><img alt="" src="{{('frontend/images/product/product-03.png')}}"></a>
+                                        <a href="product-details.html"><img alt="" src="{{asset('frontend/images/product/product-03.png')}}"></a>
                                     </div>
-                                    <div class="cart-title">    
+                                    <div class="cart-title">
                                         <a href="product-details.html">
                                             <h4>Product Name 03</h4>
                                         </a>
@@ -229,7 +222,7 @@
 
                         <div class="mobile-menu-btn d-block d-lg-none">
                             <div class="off-canvas-btn">
-                                <a href="#"><img src="{{('frontend/images/icon/bg-menu.png')}}" alt=""></a>
+                                <a href="#"><img src="{{asset('frontend/images/icon/bg-menu.png')}}" alt=""></a>
                             </div>
                         </div>
 
