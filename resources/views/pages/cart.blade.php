@@ -47,7 +47,7 @@
                                     <td class="product-subtotal"><span class="amount">
                                             @php
                                             $subtotal = $cart->quantity * $cart->price;
-                                            echo '$'.number_format($subtotal);
+                                            echo '$'.number_format($subtotal, 0);
                                             @endphp
                                         </span></td>
                                     <td class="plantmore-product-remove"><a href="{{URL::to('/delete-cart').'/'.$cart->id}}"><i class="fa fa-times"></i></a></td>
@@ -76,12 +76,12 @@
                             <div class="cart-page-total">
                                 <h2>Cart totals</h2>
                                 <ul>
-                                    <li>Subtotal <span>${{number_format(Cart::getSubTotal())}}</span></li>
-                                    <li>Tax <span>${{$tax->getCalculatedValue(Cart::getSubTotal())}}</span></li>
+                                    <li>Subtotal <span>${{number_format(Cart::getSubTotal(), 0)}}</span></li>
+                                    <li>Tax <span>${{number_format($tax->getCalculatedValue(Cart::getSubTotal()),0)}}</span></li>
                                     <li>Total <span>
                                             @php
                                             $total = Cart::getSubTotal() + $tax->getCalculatedValue(Cart::getSubTotal());
-                                            echo '$'.$total;
+                                            echo '$'.number_format($total, 0);
                                             @endphp
                                         </span></li>
                                 </ul>

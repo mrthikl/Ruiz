@@ -102,7 +102,7 @@
                                             <h4>{{$cart->name}}</h4>
                                         </a>
                                         <div class="quanti-price-wrap">
-                                            <span class="quantity">{{$cart->quantity}}</span> ×</span>
+                                            <span class="quantity">{{$cart->quantity}} ×</span>
                                             <div class="price-box"><span class="new-price">${{$cart->price}}</span></div>
                                         </div>
                                         <a class="remove_from_cart" href="{{URL::to('/delete-cart').'/'.$cart->id}}"><i class="icon_close"></i></a>
