@@ -19,7 +19,6 @@ class CartController extends Controller
         $taxCondition = new \Darryldecode\Cart\CartCondition(array(
             'name' => 'VAT 12.5%',
             'type' => 'tax',
-            'target' => 'subtotal',
             'value' => '12.5%',
         ));
         Cart::condition($taxCondition);

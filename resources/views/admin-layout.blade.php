@@ -60,7 +60,7 @@ License: For each use you must have a valid license purchased only from above li
 				<div class="aside-logo flex-column-auto" id="kt_aside_logo">
 					<!--begin::Logo-->
 					<a href="../../demo1/dist/index.html">
-						<img alt="Logo" src="{{('backend/media/logos/logo-1-dark.svg')}}" class="h-25px logo" />
+						<img alt="Logo" src="{{asset('backend/media/logos/logo-1-dark.svg')}}" class="h-25px logo" />
 					</a>
 					<!--end::Logo-->
 					<!--begin::Aside toggler-->
@@ -120,7 +120,7 @@ License: For each use you must have a valid license purchased only from above li
 						<!--begin::Mobile logo-->
 						<div class="d-flex align-items-center flex-grow-1 flex-lg-grow-0">
 							<a href="../../demo1/dist/index.html" class="d-lg-none">
-								<img alt="Logo" src="{{('backend/media/logos/logo-2.svg')}}" class="h-30px" />
+								<img alt="Logo" src="{{asset('backend/media/logos/logo-2.svg')}}" class="h-30px" />
 							</a>
 						</div>
 						<!--end::Mobile logo-->
@@ -227,7 +227,7 @@ License: For each use you must have a valid license purchased only from above li
 															<a href="#" class="d-flex text-dark text-hover-primary align-items-center mb-5">
 																<!--begin::Symbol-->
 																<div class="symbol symbol-40px me-4">
-																	<img src="{{('backend/media/avatars/150-1.jpg')}}" alt="" />
+																	<img src="{{asset('backend/media/avatars/150-1.jpg')}}" alt="" />
 																</div>
 																<!--end::Symbol-->
 																<!--begin::Title-->
@@ -243,7 +243,7 @@ License: For each use you must have a valid license purchased only from above li
 															<a href="#" class="d-flex text-dark text-hover-primary align-items-center mb-5">
 																<!--begin::Symbol-->
 																<div class="symbol symbol-40px me-4">
-																	<img src="{{('backend/media/avatars/150-3.jpg')}}'" alt="" />
+																	<img src="{{asset('backend/media/avatars/150-3.jpg')}}'" alt="" />
 																</div>
 																<!--end::Symbol-->
 																<!--begin::Title-->
@@ -259,7 +259,7 @@ License: For each use you must have a valid license purchased only from above li
 															<a href="#" class="d-flex text-dark text-hover-primary align-items-center mb-5">
 																<!--begin::Symbol-->
 																<div class="symbol symbol-40px me-4">
-																	<img src="{{('backend/media/avatars/150-8.jpg')}}" alt="" />
+																	<img src="{{asset('backend/media/avatars/150-8.jpg')}}" alt="" />
 																</div>
 																<!--end::Symbol-->
 																<!--begin::Title-->
@@ -275,7 +275,7 @@ License: For each use you must have a valid license purchased only from above li
 															<a href="#" class="d-flex text-dark text-hover-primary align-items-center mb-5">
 																<!--begin::Symbol-->
 																<div class="symbol symbol-40px me-4">
-																	<img src="{{('backend/media/avatars/150-11.jpg')}}" alt="" />
+																	<img src="{{asset('backend/media/avatars/150-11.jpg')}}" alt="" />
 																</div>
 																<!--end::Symbol-->
 																<!--begin::Title-->
@@ -291,7 +291,7 @@ License: For each use you must have a valid license purchased only from above li
 															<a href="#" class="d-flex text-dark text-hover-primary align-items-center mb-5">
 																<!--begin::Symbol-->
 																<div class="symbol symbol-40px me-4">
-																	<img src="{{('backend/media/avatars/150-12.jpg')}}" alt="" />
+																	<img src="{{asset('backend/media/avatars/150-12.jpg')}}" alt="" />
 																</div>
 																<!--end::Symbol-->
 																<!--begin::Title-->
@@ -311,7 +311,7 @@ License: For each use you must have a valid license purchased only from above li
 																<!--begin::Symbol-->
 																<div class="symbol symbol-40px me-4">
 																	<span class="symbol-label bg-light">
-																		<img class="w-20px h-20px" src="{{('backend/media/svg/brand-logos/volicity-9.svg')}}" alt="" />
+																		<img class="w-20px h-20px" src="{{asset('backend/media/svg/brand-logos/volicity-9.svg')}}" alt="" />
 																	</span>
 																</div>
 																<!--end::Symbol-->
@@ -329,7 +329,7 @@ License: For each use you must have a valid license purchased only from above li
 																<!--begin::Symbol-->
 																<div class="symbol symbol-40px me-4">
 																	<span class="symbol-label bg-light">
-																		<img class="w-20px h-20px" src="{{('backend/media/svg/brand-logos/tvit.svg')}}" alt="" />
+																		<img class="w-20px h-20px" src="{{asset('backend/media/svg/brand-logos/tvit.svg')}}" alt="" />
 																	</span>
 																</div>
 																<!--end::Symbol-->
@@ -348,7 +348,7 @@ License: For each use you must have a valid license purchased only from above li
 																<!--begin::Symbol-->
 																<div class="symbol symbol-40px me-4">
 																	<span class="symbol-label bg-light">
-																		<img class="w-20px h-20px" src="{{('backend/media/svg/misc/infography.svg')}}" alt="" />
+																		<img class="w-20px h-20px" src="{{asset('backend/media/svg/misc/infography.svg')}}" alt="" />
 																	</span>
 																</div>
 																<!--end::Symbol-->
@@ -366,7 +366,7 @@ License: For each use you must have a valid license purchased only from above li
 																<!--begin::Symbol-->
 																<div class="symbol symbol-40px me-4">
 																	<span class="symbol-label bg-light">
-																		<img class="w-20px h-20px" src="{{('backend/media/svg/brand-logos/leaf.svg')}}" alt="" />
+																		<img class="w-20px h-20px" src="{{asset('backend/media/svg/brand-logos/leaf.svg')}}" alt="" />
 																	</span>
 																</div>
 																<!--end::Symbol-->
@@ -383,7 +383,7 @@ License: For each use you must have a valid license purchased only from above li
 																<!--begin::Symbol-->
 																<div class="symbol symbol-40px me-4">
 																	<span class="symbol-label bg-light">
-																		<img class="w-20px h-20px" src="{{('backend/media/svg/brand-logos/tower.svg')}}" alt="" />
+																		<img class="w-20px h-20px" src="{{asset('backend/media/svg/brand-logos/tower.svg')}}" alt="" />
 																	</span>
 																</div>
 																<!--end::Symbol-->
@@ -1230,7 +1230,7 @@ License: For each use you must have a valid license purchased only from above li
 														<!--end::Section-->
 														<!--begin::Illustration-->
 														<div class="text-center px-4">
-															<img class="mw-100 mh-200px" alt="image" src="{{('backend/media/illustrations/sketchy-1/1.png')}}" />
+															<img class="mw-100 mh-200px" alt="image" src="{{asset('backend/media/illustrations/sketchy-1/1.png')}}" />
 														</div>
 														<!--end::Illustration-->
 													</div>
@@ -1631,7 +1631,7 @@ License: For each use you must have a valid license purchased only from above li
 									<div class="d-flex align-items-center ms-1 ms-lg-3" id="kt_header_user_menu_toggle">
 										<!--begin::Menu wrapper-->
 										<div class="cursor-pointer symbol symbol-30px symbol-md-40px" data-kt-menu-trigger="click" data-kt-menu-attach="parent" data-kt-menu-placement="bottom-end">
-											<img src="{{('backend/media/avatars/150-26.jpg')}}" alt="user" />
+											<img src="{{asset('backend/media/avatars/150-26.jpg')}}" alt="user" />
 										</div>
 										<!--begin::Menu-->
 										<div class="menu menu-sub menu-sub-dropdown menu-column menu-rounded menu-gray-800 menu-state-bg menu-state-primary fw-bold py-4 fs-6 w-275px" data-kt-menu="true">
@@ -1640,7 +1640,7 @@ License: For each use you must have a valid license purchased only from above li
 												<div class="menu-content d-flex align-items-center px-3">
 													<!--begin::Avatar-->
 													<div class="symbol symbol-50px me-5">
-														<img alt="Logo" src="{{('backend/media/avatars/150-26.jpg')}}" />
+														<img alt="Logo" src="{{asset('backend/media/avatars/150-26.jpg')}}" />
 													</div>
 													<!--end::Avatar-->
 													<!--begin::Username-->
@@ -1737,7 +1737,7 @@ License: For each use you must have a valid license purchased only from above li
 												<a href="#" class="menu-link px-5">
 													<span class="menu-title position-relative">Language
 														<span class="fs-8 rounded bg-light px-3 py-2 position-absolute translate-middle-y top-50 end-0">English
-															<img class="w-15px h-15px rounded-1 ms-2" src="{{('backend/media/flags/united-states.svg')}}" alt="" /></span></span>
+															<img class="w-15px h-15px rounded-1 ms-2" src="{{asset('backend/media/flags/united-states.svg')}}" alt="" /></span></span>
 												</a>
 												<!--begin::Menu sub-->
 												<div class="menu-sub menu-sub-dropdown w-175px py-4">
@@ -1745,7 +1745,7 @@ License: For each use you must have a valid license purchased only from above li
 													<div class="menu-item px-3">
 														<a href="../../demo1/dist/account/settings.html" class="menu-link d-flex px-5 active">
 															<span class="symbol symbol-20px me-4">
-																<img class="rounded-1" src="{{('backend/media/flags/united-states.svg')}}" alt="" />
+																<img class="rounded-1" src="{{asset('backend/media/flags/united-states.svg')}}" alt="" />
 															</span>English</a>
 													</div>
 													<!--end::Menu item-->
@@ -1753,7 +1753,7 @@ License: For each use you must have a valid license purchased only from above li
 													<div class="menu-item px-3">
 														<a href="../../demo1/dist/account/settings.html" class="menu-link d-flex px-5">
 															<span class="symbol symbol-20px me-4">
-																<img class="rounded-1" src="{{('backend/media/flags/spain.svg')}}" alt="" />
+																<img class="rounded-1" src="{{asset('backend/media/flags/spain.svg')}}" alt="" />
 															</span>Spanish</a>
 													</div>
 													<!--end::Menu item-->
@@ -1761,7 +1761,7 @@ License: For each use you must have a valid license purchased only from above li
 													<div class="menu-item px-3">
 														<a href="../../demo1/dist/account/settings.html" class="menu-link d-flex px-5">
 															<span class="symbol symbol-20px me-4">
-																<img class="rounded-1" src="{{('backend/media/flags/germany.svg')}}" alt="" />
+																<img class="rounded-1" src="{{asset('backend/media/flags/germany.svg')}}" alt="" />
 															</span>German</a>
 													</div>
 													<!--end::Menu item-->
@@ -1769,7 +1769,7 @@ License: For each use you must have a valid license purchased only from above li
 													<div class="menu-item px-3">
 														<a href="../../demo1/dist/account/settings.html" class="menu-link d-flex px-5">
 															<span class="symbol symbol-20px me-4">
-																<img class="rounded-1" src="{{('backend/media/flags/japan.svg')}}" alt="" />
+																<img class="rounded-1" src="{{asset('backend/media/flags/japan.svg')}}" alt="" />
 															</span>Japanese</a>
 													</div>
 													<!--end::Menu item-->
@@ -1777,7 +1777,7 @@ License: For each use you must have a valid license purchased only from above li
 													<div class="menu-item px-3">
 														<a href="../../demo1/dist/account/settings.html" class="menu-link d-flex px-5">
 															<span class="symbol symbol-20px me-4">
-																<img class="rounded-1" src="{{('backend/media/flags/france.svg')}}" alt="" />
+																<img class="rounded-1" src="{{asset('backend/media/flags/france.svg')}}" alt="" />
 															</span>French</a>
 													</div>
 													<!--end::Menu item-->
@@ -1924,7 +1924,7 @@ License: For each use you must have a valid license purchased only from above li
 										<!--end::Info-->
 										<!--begin::User-->
 										<div class="symbol symbol-circle symbol-25px" data-bs-toggle="tooltip" data-bs-boundary="window" data-bs-placement="top" title="Nina Nilson">
-											<img src="{{('backend/media/avatars/150-11.jpg')}}" alt="img" />
+											<img src="{{asset('backend/media/avatars/150-11.jpg')}}" alt="img" />
 										</div>
 										<!--end::User-->
 									</div>
@@ -1948,12 +1948,12 @@ License: For each use you must have a valid license purchased only from above li
 										<div class="symbol-group symbol-hover flex-nowrap flex-grow-1 min-w-100px pe-2">
 											<!--begin::User-->
 											<div class="symbol symbol-circle symbol-25px">
-												<img src="{{('backend/media/avatars/150-3.jpg')}}" alt="img" />
+												<img src="{{asset('backend/media/avatars/150-3.jpg')}}" alt="img" />
 											</div>
 											<!--end::User-->
 											<!--begin::User-->
 											<div class="symbol symbol-circle symbol-25px">
-												<img src="{{('backend/media/avatars/150-11.jpg')}}" alt="img" />
+												<img src="{{asset('backend/media/avatars/150-11.jpg')}}" alt="img" />
 											</div>
 											<!--end::User-->
 											<!--begin::User-->
@@ -1989,7 +1989,7 @@ License: For each use you must have a valid license purchased only from above li
 										<div class="symbol-group symbol-hover flex-nowrap flex-grow-1 min-w-100px">
 											<!--begin::User-->
 											<div class="symbol symbol-circle symbol-25px">
-												<img src="{{('backend/media/avatars/150-5.jpg')}}" alt="img" />
+												<img src="{{asset('backend/media/avatars/150-5.jpg')}}" alt="img" />
 											</div>
 											<!--end::User-->
 											<!--begin::User-->
@@ -2050,7 +2050,7 @@ License: For each use you must have a valid license purchased only from above li
 										<!--end::Info-->
 										<!--begin::User-->
 										<div class="symbol symbol-circle symbol-25px" data-bs-toggle="tooltip" data-bs-boundary="window" data-bs-placement="top" title="Alan Nilson">
-											<img src="{{('backend/media/avatars/150-2.jpg')}}" alt="img" />
+											<img src="{{asset('backend/media/avatars/150-2.jpg')}}" alt="img" />
 										</div>
 										<!--end::User-->
 									</div>
@@ -2095,7 +2095,7 @@ License: For each use you must have a valid license purchased only from above li
 										<!--end::Info-->
 										<!--begin::User-->
 										<div class="symbol symbol-circle symbol-25px" data-bs-toggle="tooltip" data-bs-boundary="window" data-bs-placement="top" title="Jan Hummer">
-											<img src="{{('backend/media/avatars/150-6.jpg')}}" alt="img" />
+											<img src="{{asset('backend/media/avatars/150-6.jpg')}}" alt="img" />
 										</div>
 										<!--end::User-->
 									</div>
@@ -2108,7 +2108,7 @@ License: For each use you must have a valid license purchased only from above li
 										<!--begin::Item-->
 										<div class="d-flex flex-aligns-center pe-10 pe-lg-20">
 											<!--begin::Icon-->
-											<img alt="" class="w-30px me-3" src="{{('backend/media/svg/files/pdf.svg')}}" />
+											<img alt="" class="w-30px me-3" src="{{asset('backend/media/svg/files/pdf.svg')}}" />
 											<!--end::Icon-->
 											<!--begin::Info-->
 											<div class="ms-1 fw-bold">
@@ -2126,7 +2126,7 @@ License: For each use you must have a valid license purchased only from above li
 										<!--begin::Item-->
 										<div class="d-flex flex-aligns-center pe-10 pe-lg-20">
 											<!--begin::Icon-->
-											<img alt="" class="w-30px me-3" src="{{('backend/media/svg/files/doc.svg')}}" />
+											<img alt="" class="w-30px me-3" src="{{asset('backend/media/svg/files/doc.svg')}}" />
 											<!--end::Icon-->
 											<!--begin::Info-->
 											<div class="ms-1 fw-bold">
@@ -2144,7 +2144,7 @@ License: For each use you must have a valid license purchased only from above li
 										<!--begin::Item-->
 										<div class="d-flex flex-aligns-center">
 											<!--begin::Icon-->
-											<img alt="" class="w-30px me-3" src="{{('backend/media/svg/files/css.svg')}}" />
+											<img alt="" class="w-30px me-3" src="{{asset('backend/media/svg/files/css.svg')}}" />
 											<!--end::Icon-->
 											<!--begin::Info-->
 											<div class="ms-1 fw-bold">
@@ -2203,7 +2203,7 @@ License: For each use you must have a valid license purchased only from above li
 										<!--end::Info-->
 										<!--begin::User-->
 										<div class="symbol symbol-circle symbol-25px" data-bs-toggle="tooltip" data-bs-boundary="window" data-bs-placement="top" title="Nina Nilson">
-											<img src="{{('backend/media/avatars/150-11.jpg')}}" alt="img" />
+											<img src="{{asset('backend/media/avatars/150-11.jpg')}}" alt="img" />
 										</div>
 										<!--end::User-->
 									</div>
@@ -2247,7 +2247,7 @@ License: For each use you must have a valid license purchased only from above li
 										<!--end::Info-->
 										<!--begin::User-->
 										<div class="symbol symbol-circle symbol-25px" data-bs-toggle="tooltip" data-bs-boundary="window" data-bs-placement="top" title="Marcus Dotson">
-											<img src="{{('backend/media/avatars/150-3.jpg')}}" alt="img" />
+											<img src="{{asset('backend/media/avatars/150-3.jpg')}}" alt="img" />
 										</div>
 										<!--end::User-->
 									</div>
@@ -2261,7 +2261,7 @@ License: For each use you must have a valid license purchased only from above li
 										<div class="overlay me-10">
 											<!--begin::Image-->
 											<div class="overlay-wrapper">
-												<img alt="img" class="rounded w-200px" src="{{('backend/media/demos/demo1.png')}}" />
+												<img alt="img" class="rounded w-200px" src="{{asset('backend/media/demos/demo1.png')}}" />
 											</div>
 											<!--end::Image-->
 											<!--begin::Link-->
@@ -2275,7 +2275,7 @@ License: For each use you must have a valid license purchased only from above li
 										<div class="overlay me-10">
 											<!--begin::Image-->
 											<div class="overlay-wrapper">
-												<img alt="img" class="rounded w-200px" src="{{('backend/media/demos/demo2.png')}}" />
+												<img alt="img" class="rounded w-200px" src="{{asset('backend/media/demos/demo2.png')}}" />
 											</div>
 											<!--end::Image-->
 											<!--begin::Link-->
@@ -2289,7 +2289,7 @@ License: For each use you must have a valid license purchased only from above li
 										<div class="overlay">
 											<!--begin::Image-->
 											<div class="overlay-wrapper">
-												<img alt="img" class="rounded w-200px" src="{{('backend/media/demos/demo3.png')}}" />
+												<img alt="img" class="rounded w-200px" src="{{asset('backend/media/demos/demo3.png')}}" />
 											</div>
 											<!--end::Image-->
 											<!--begin::Link-->
@@ -2388,7 +2388,7 @@ License: For each use you must have a valid license purchased only from above li
 										<!--end::Info-->
 										<!--begin::User-->
 										<div class="symbol symbol-circle symbol-25px" data-bs-toggle="tooltip" data-bs-boundary="window" data-bs-placement="top" title="Robert Rich">
-											<img src="{{('backend/media/avatars/150-14.jpg')}}" alt="img" />
+											<img src="{{asset('backend/media/avatars/150-14.jpg')}}" alt="img" />
 										</div>
 										<!--end::User-->
 									</div>
@@ -2612,7 +2612,7 @@ License: For each use you must have a valid license purchased only from above li
 							<div class="d-flex align-items-center mb-2">
 								<!--begin::Avatar-->
 								<div class="symbol symbol-35px symbol-circle">
-									<img alt="Pic" src="{{('backend/media/avatars/150-15.jpg')}}" />
+									<img alt="Pic" src="{{asset('backend/media/avatars/150-15.jpg')}}" />
 								</div>
 								<!--end::Avatar-->
 								<!--begin::Details-->
@@ -2646,7 +2646,7 @@ License: For each use you must have a valid license purchased only from above li
 								<!--end::Details-->
 								<!--begin::Avatar-->
 								<div class="symbol symbol-35px symbol-circle">
-									<img alt="Pic" src="{{('backend/media/avatars/150-26.jpg')}}" />
+									<img alt="Pic" src="{{asset('backend/media/avatars/150-26.jpg')}}" />
 								</div>
 								<!--end::Avatar-->
 							</div>
@@ -2667,7 +2667,7 @@ License: For each use you must have a valid license purchased only from above li
 							<div class="d-flex align-items-center mb-2">
 								<!--begin::Avatar-->
 								<div class="symbol symbol-35px symbol-circle">
-									<img alt="Pic" src="{{('backend/media/avatars/150-15.jpg')}}" />
+									<img alt="Pic" src="{{asset('backend/media/avatars/150-15.jpg')}}" />
 								</div>
 								<!--end::Avatar-->
 								<!--begin::Details-->
@@ -2700,7 +2700,7 @@ License: For each use you must have a valid license purchased only from above li
 								<!--end::Details-->
 								<!--begin::Avatar-->
 								<div class="symbol symbol-35px symbol-circle">
-									<img alt="Pic" src="{{('backend/media/avatars/150-26.jpg')}}" />
+									<img alt="Pic" src="{{asset('backend/media/avatars/150-26.jpg')}}" />
 								</div>
 								<!--end::Avatar-->
 							</div>
@@ -2721,7 +2721,7 @@ License: For each use you must have a valid license purchased only from above li
 							<div class="d-flex align-items-center mb-2">
 								<!--begin::Avatar-->
 								<div class="symbol symbol-35px symbol-circle">
-									<img alt="Pic" src="{{('backend/media/avatars/150-15.jpg')}}" />
+									<img alt="Pic" src="{{asset('backend/media/avatars/150-15.jpg')}}" />
 								</div>
 								<!--end::Avatar-->
 								<!--begin::Details-->
@@ -2757,7 +2757,7 @@ License: For each use you must have a valid license purchased only from above li
 								<!--end::Details-->
 								<!--begin::Avatar-->
 								<div class="symbol symbol-35px symbol-circle">
-									<img alt="Pic" src="{{('backend/media/avatars/150-26.jpg')}}" />
+									<img alt="Pic" src="{{asset('backend/media/avatars/150-26.jpg')}}" />
 								</div>
 								<!--end::Avatar-->
 							</div>
@@ -2777,7 +2777,7 @@ License: For each use you must have a valid license purchased only from above li
 							<div class="d-flex align-items-center mb-2">
 								<!--begin::Avatar-->
 								<div class="symbol symbol-35px symbol-circle">
-									<img alt="Pic" src="{{('backend/media/avatars/150-15.jpg')}}" />
+									<img alt="Pic" src="{{asset('backend/media/avatars/150-15.jpg')}}" />
 								</div>
 								<!--end::Avatar-->
 								<!--begin::Details-->
@@ -2811,7 +2811,7 @@ License: For each use you must have a valid license purchased only from above li
 								<!--end::Details-->
 								<!--begin::Avatar-->
 								<div class="symbol symbol-35px symbol-circle">
-									<img alt="Pic" src="{{('backend/media/avatars/150-26.jpg')}}" />
+									<img alt="Pic" src="{{asset('backend/media/avatars/150-26.jpg')}}" />
 								</div>
 								<!--end::Avatar-->
 							</div>
@@ -2831,7 +2831,7 @@ License: For each use you must have a valid license purchased only from above li
 							<div class="d-flex align-items-center mb-2">
 								<!--begin::Avatar-->
 								<div class="symbol symbol-35px symbol-circle">
-									<img alt="Pic" src="{{('backend/media/avatars/150-15.jpg')}}" />
+									<img alt="Pic" src="{{asset('backend/media/avatars/150-15.jpg')}}" />
 								</div>
 								<!--end::Avatar-->
 								<!--begin::Details-->
@@ -2985,7 +2985,7 @@ License: For each use you must have a valid license purchased only from above li
 									<!--begin::Demo-->
 									<div class="overlay overflow-hidden position-relative border border-4 border-success rounded">
 										<div class="overlay-wrapper">
-											<img src="{{('backend/media/demos/demo1.png')}}" alt="demo" class="w-100" />
+											<img src="{{asset('backend/media/demos/demo1.png')}}" alt="demo" class="w-100" />
 										</div>
 										<div class="overlay-layer bg-dark bg-opacity-10">
 											<a href="https://preview.keenthemes.com/metronic8/demo1" class="btn btn-sm btn-success shadow">Demo 1</a>
@@ -2999,7 +2999,7 @@ License: For each use you must have a valid license purchased only from above li
 									<!--begin::Demo-->
 									<div class="overlay overflow-hidden position-relative border border-4 border-gray-200 rounded">
 										<div class="overlay-wrapper">
-											<img src="{{('backendmedia/demos/demo2.png')}}" alt="demo" class="w-100" />
+											<img src="{{asset('backendmedia/demos/demo2.png')}}" alt="demo" class="w-100" />
 										</div>
 										<div class="overlay-layer bg-dark bg-opacity-10">
 											<a href="https://preview.keenthemes.com/metronic8/demo2" class="btn btn-sm btn-success shadow">Demo 2</a>
@@ -3013,7 +3013,7 @@ License: For each use you must have a valid license purchased only from above li
 									<!--begin::Demo-->
 									<div class="overlay overflow-hidden position-relative border border-4 border-gray-200 rounded">
 										<div class="overlay-wrapper">
-											<img src="{{('backend/media/demos/demo3.png')}}" alt="demo" class="w-100" />
+											<img src="{{asset('backend/media/demos/demo3.png')}}" alt="demo" class="w-100" />
 										</div>
 										<div class="overlay-layer bg-dark bg-opacity-10">
 											<a href="https://preview.keenthemes.com/metronic8/demo3" class="btn btn-sm btn-success shadow">Demo 3</a>
@@ -3027,7 +3027,7 @@ License: For each use you must have a valid license purchased only from above li
 									<!--begin::Demo-->
 									<div class="overlay overflow-hidden position-relative border border-4 border-gray-200 rounded">
 										<div class="overlay-wrapper">
-											<img src="{{('backend/media/demos/demo4.png')}}" alt="demo" class="w-100" />
+											<img src="{{asset('backend/media/demos/demo4.png')}}" alt="demo" class="w-100" />
 										</div>
 										<div class="overlay-layer bg-dark bg-opacity-10">
 											<a href="https://preview.keenthemes.com/metronic8/demo4" class="btn btn-sm btn-success shadow">Demo 4</a>
@@ -3041,7 +3041,7 @@ License: For each use you must have a valid license purchased only from above li
 									<!--begin::Demo-->
 									<div class="overlay overflow-hidden position-relative border border-4 border-gray-200 rounded">
 										<div class="overlay-wrapper">
-											<img src="{{('backend/media/demos/demo5.png')}}" alt="demo" class="w-100" />
+											<img src="{{asset('backend/media/demos/demo5.png')}}" alt="demo" class="w-100" />
 										</div>
 										<div class="overlay-layer bg-dark bg-opacity-10">
 											<a href="https://preview.keenthemes.com/metronic8/demo5" class="btn btn-sm btn-success shadow">Demo 5</a>
@@ -3055,7 +3055,7 @@ License: For each use you must have a valid license purchased only from above li
 									<!--begin::Demo-->
 									<div class="overlay overflow-hidden position-relative border border-4 border-gray-200 rounded">
 										<div class="overlay-wrapper">
-											<img src="{{('backend/media/demos/demo6.png')}}" alt="demo" class="w-100" />
+											<img src="{{asset('backend/media/demos/demo6.png')}}" alt="demo" class="w-100" />
 										</div>
 										<div class="overlay-layer bg-dark bg-opacity-10">
 											<a href="https://preview.keenthemes.com/metronic8/demo6" class="btn btn-sm btn-success shadow">Demo 6</a>
@@ -3069,7 +3069,7 @@ License: For each use you must have a valid license purchased only from above li
 									<!--begin::Demo-->
 									<div class="overlay overflow-hidden position-relative border border-4 border-gray-200 rounded">
 										<div class="overlay-wrapper">
-											<img src="{{('backend/media/demos/demo7.png')}}" alt="demo" class="w-100" />
+											<img src="{{asset('backend/media/demos/demo7.png')}}" alt="demo" class="w-100" />
 										</div>
 										<div class="overlay-layer bg-dark bg-opacity-10">
 											<a href="https://preview.keenthemes.com/metronic8/demo7" class="btn btn-sm btn-success shadow">Demo 7</a>
@@ -3083,7 +3083,7 @@ License: For each use you must have a valid license purchased only from above li
 									<!--begin::Demo-->
 									<div class="overlay overflow-hidden position-relative border border-4 border-gray-200 rounded">
 										<div class="overlay-wrapper">
-											<img src="{{('backend/media/demos/demo8.png')}}" alt="demo" class="w-100" />
+											<img src="{{asset('backend/media/demos/demo8.png')}}" alt="demo" class="w-100" />
 										</div>
 										<div class="overlay-layer bg-dark bg-opacity-10">
 											<a href="https://preview.keenthemes.com/metronic8/demo8" class="btn btn-sm btn-success shadow">Demo 8</a>
@@ -3097,7 +3097,7 @@ License: For each use you must have a valid license purchased only from above li
 									<!--begin::Demo-->
 									<div class="overlay overflow-hidden position-relative border border-4 border-gray-200 rounded">
 										<div class="overlay-wrapper">
-											<img src="{{('backend/media/demos/demo9.png')}}" alt="demo" class="w-100" />
+											<img src="{{asset('backend/media/demos/demo9.png')}}" alt="demo" class="w-100" />
 										</div>
 										<div class="overlay-layer bg-dark bg-opacity-10">
 											<a href="https://preview.keenthemes.com/metronic8/demo9" class="btn btn-sm btn-success shadow">Demo 9</a>
@@ -3111,7 +3111,7 @@ License: For each use you must have a valid license purchased only from above li
 									<!--begin::Demo-->
 									<div class="overlay overflow-hidden position-relative border border-4 border-gray-200 rounded">
 										<div class="overlay-wrapper">
-											<img src="{{('backend/media/demos/demo10.png')}}" alt="demo" class="w-100" />
+											<img src="{{asset('backend/media/demos/demo10.png')}}" alt="demo" class="w-100" />
 										</div>
 										<div class="overlay-layer bg-dark bg-opacity-10">
 											<a href="https://preview.keenthemes.com/metronic8/demo10" class="btn btn-sm btn-success shadow">Demo 10</a>
@@ -3125,7 +3125,7 @@ License: For each use you must have a valid license purchased only from above li
 									<!--begin::Demo-->
 									<div class="overlay overflow-hidden position-relative border border-4 border-gray-200 rounded">
 										<div class="overlay-wrapper">
-											<img src="{{('backend/media/demos/demo11.png')}}" alt="demo" class="w-100" />
+											<img src="{{asset('backend/media/demos/demo11.png')}}" alt="demo" class="w-100" />
 										</div>
 										<div class="overlay-layer bg-dark bg-opacity-10">
 											<a href="https://preview.keenthemes.com/metronic8/demo11" class="btn btn-sm btn-success shadow">Demo 11</a>
@@ -3139,7 +3139,7 @@ License: For each use you must have a valid license purchased only from above li
 									<!--begin::Demo-->
 									<div class="overlay overflow-hidden position-relative border border-4 border-gray-200 rounded">
 										<div class="overlay-wrapper">
-											<img src="{{('backend/media/demos/demo12.png')}}" alt="demo" class="w-100" />
+											<img src="{{asset('backend/media/demos/demo12.png')}}" alt="demo" class="w-100" />
 										</div>
 										<div class="overlay-layer bg-dark bg-opacity-10">
 											<a href="https://preview.keenthemes.com/metronic8/demo12" class="btn btn-sm btn-success shadow">Demo 12</a>
@@ -3153,7 +3153,7 @@ License: For each use you must have a valid license purchased only from above li
 									<!--begin::Demo-->
 									<div class="overlay overflow-hidden position-relative border border-4 border-gray-200 rounded">
 										<div class="overlay-wrapper">
-											<img src="{{('backend/media/demos/demo13.png')}}" alt="demo" class="w-100" />
+											<img src="{{asset('backend/media/demos/demo13.png')}}" alt="demo" class="w-100" />
 										</div>
 										<div class="overlay-layer bg-dark bg-opacity-10">
 											<a href="https://preview.keenthemes.com/metronic8/demo13" class="btn btn-sm btn-success shadow">Demo 13</a>
@@ -3167,7 +3167,7 @@ License: For each use you must have a valid license purchased only from above li
 									<!--begin::Demo-->
 									<div class="overlay overflow-hidden position-relative border border-4 border-gray-200 rounded">
 										<div class="overlay-wrapper">
-											<img src="{{('backend/media/demos/demo14.png')}}" alt="demo" class="w-100 opacity-25" />
+											<img src="{{asset('backend/media/demos/demo14.png')}}" alt="demo" class="w-100 opacity-25" />
 										</div>
 										<div class="overlay-layer bg-dark bg-opacity-10">
 											<div class="badge badge-white px-6 py-4 fw-bold fs-base shadow">Coming soon
@@ -3182,7 +3182,7 @@ License: For each use you must have a valid license purchased only from above li
 									<!--begin::Demo-->
 									<div class="overlay overflow-hidden position-relative border border-4 border-gray-200 rounded">
 										<div class="overlay-wrapper">
-											<img src="{{('backend/media/demos/demo15.png')}}" alt="demo" class="w-100 opacity-25" />
+											<img src="{{asset('backend/media/demos/demo15.png')}}" alt="demo" class="w-100 opacity-25" />
 										</div>
 										<div class="overlay-layer bg-dark bg-opacity-10">
 											<div class="badge badge-white px-6 py-4 fw-bold fs-base shadow">Coming soon
@@ -3197,7 +3197,7 @@ License: For each use you must have a valid license purchased only from above li
 									<!--begin::Demo-->
 									<div class="overlay overflow-hidden position-relative border border-4 border-gray-200 rounded">
 										<div class="overlay-wrapper">
-											<img src="{{('backend/media/demos/demo16.png')}}" alt="demo" class="w-100 opacity-25" />
+											<img src="{{asset('backend/media/demos/demo16.png')}}" alt="demo" class="w-100 opacity-25" />
 										</div>
 										<div class="overlay-layer bg-dark bg-opacity-10">
 											<div class="badge badge-white px-6 py-4 fw-bold fs-base shadow">Coming soon
@@ -3212,7 +3212,7 @@ License: For each use you must have a valid license purchased only from above li
 									<!--begin::Demo-->
 									<div class="overlay overflow-hidden position-relative border border-4 border-gray-200 rounded">
 										<div class="overlay-wrapper">
-											<img src="{{('backend/media/demos/demo17.png')}}" alt="demo" class="w-100 opacity-25" />
+											<img src="{{asset('backend/media/demos/demo17.png')}}" alt="demo" class="w-100 opacity-25" />
 										</div>
 										<div class="overlay-layer bg-dark bg-opacity-10">
 											<div class="badge badge-white px-6 py-4 fw-bold fs-base shadow">Coming soon
@@ -3227,7 +3227,7 @@ License: For each use you must have a valid license purchased only from above li
 									<!--begin::Demo-->
 									<div class="overlay overflow-hidden position-relative border border-4 border-gray-200 rounded">
 										<div class="overlay-wrapper">
-											<img src="{{('backend/media/demos/demo18.png')}}" alt="demo" class="w-100 opacity-25" />
+											<img src="{{asset('backend/media/demos/demo18.png')}}" alt="demo" class="w-100 opacity-25" />
 										</div>
 										<div class="overlay-layer bg-dark bg-opacity-10">
 											<div class="badge badge-white px-6 py-4 fw-bold fs-base shadow">Coming soon
@@ -3242,7 +3242,7 @@ License: For each use you must have a valid license purchased only from above li
 									<!--begin::Demo-->
 									<div class="overlay overflow-hidden position-relative border border-4 border-gray-200 rounded">
 										<div class="overlay-wrapper">
-											<img src="{{('backend/media/demos/demo19.png')}}" alt="demo" class="w-100 opacity-25" />
+											<img src="{{asset('backend/media/demos/demo19.png')}}" alt="demo" class="w-100 opacity-25" />
 										</div>
 										<div class="overlay-layer bg-dark bg-opacity-10">
 											<div class="badge badge-white px-6 py-4 fw-bold fs-base shadow">Coming soon
@@ -3257,7 +3257,7 @@ License: For each use you must have a valid license purchased only from above li
 									<!--begin::Demo-->
 									<div class="overlay overflow-hidden position-relative border border-4 border-gray-200 rounded">
 										<div class="overlay-wrapper">
-											<img src="{{('backend/media/demos/demo20.png')}}" alt="demo" class="w-100 opacity-25" />
+											<img src="{{asset('backend/media/demos/demo20.png')}}" alt="demo" class="w-100 opacity-25" />
 										</div>
 										<div class="overlay-layer bg-dark bg-opacity-10">
 											<div class="badge badge-white px-6 py-4 fw-bold fs-base shadow">Coming soon
@@ -3272,7 +3272,7 @@ License: For each use you must have a valid license purchased only from above li
 									<!--begin::Demo-->
 									<div class="overlay overflow-hidden position-relative border border-4 border-gray-200 rounded">
 										<div class="overlay-wrapper">
-											<img src="{{('backend/media/demos/demo21.png')}}" alt="demo" class="w-100 opacity-25" />
+											<img src="{{asset('backend/media/demos/demo21.png')}}" alt="demo" class="w-100 opacity-25" />
 										</div>
 										<div class="overlay-layer bg-dark bg-opacity-10">
 											<div class="badge badge-white px-6 py-4 fw-bold fs-base shadow">Coming soon
@@ -3287,7 +3287,7 @@ License: For each use you must have a valid license purchased only from above li
 									<!--begin::Demo-->
 									<div class="overlay overflow-hidden position-relative border border-4 border-gray-200 rounded">
 										<div class="overlay-wrapper">
-											<img src="{{('backend/media/demos/demo22.png')}}" alt="demo" class="w-100 opacity-25" />
+											<img src="{{asset('backend/media/demos/demo22.png')}}" alt="demo" class="w-100 opacity-25" />
 										</div>
 										<div class="overlay-layer bg-dark bg-opacity-10">
 											<div class="badge badge-white px-6 py-4 fw-bold fs-base shadow">Coming soon
@@ -3351,7 +3351,7 @@ License: For each use you must have a valid license purchased only from above li
 					<!--end::Heading-->
 					<!--begin::Google Contacts Invite-->
 					<div class="btn btn-light-primary fw-bolder w-100 mb-8">
-						<img alt="Logo" src="{{('backend/media/svg/brand-logos/google-icon.svg')}}" class="h-20px me-3" />Invite
+						<img alt="Logo" src="{{asset('backend/media/svg/brand-logos/google-icon.svg')}}" class="h-20px me-3" />Invite
 						Gmail Contacts
 					</div>
 					<!--end::Google Contacts Invite-->
@@ -3376,7 +3376,7 @@ License: For each use you must have a valid license purchased only from above li
 								<div class="d-flex align-items-center">
 									<!--begin::Avatar-->
 									<div class="symbol symbol-35px symbol-circle">
-										<img alt="Pic" src="{{('backend/media/avatars/150-1.jpg')}}" />
+										<img alt="Pic" src="{{asset('backend/media/avatars/150-1.jpg')}}" />
 									</div>
 									<!--end::Avatar-->
 									<!--begin::Details-->
@@ -3434,7 +3434,7 @@ License: For each use you must have a valid license purchased only from above li
 								<div class="d-flex align-items-center">
 									<!--begin::Avatar-->
 									<div class="symbol symbol-35px symbol-circle">
-										<img alt="Pic" src="{{('backend/media/avatars/150-26.jpg')}}" />
+										<img alt="Pic" src="{{asset('backend/media/avatars/150-26.jpg')}}" />
 									</div>
 									<!--end::Avatar-->
 									<!--begin::Details-->
@@ -3463,7 +3463,7 @@ License: For each use you must have a valid license purchased only from above li
 								<div class="d-flex align-items-center">
 									<!--begin::Avatar-->
 									<div class="symbol symbol-35px symbol-circle">
-										<img alt="Pic" src="{{('backend/media/avatars/150-4.jpg')}}" />
+										<img alt="Pic" src="{{asset('backend/media/avatars/150-4.jpg')}}" />
 									</div>
 									<!--end::Avatar-->
 									<!--begin::Details-->
@@ -3492,7 +3492,7 @@ License: For each use you must have a valid license purchased only from above li
 								<div class="d-flex align-items-center">
 									<!--begin::Avatar-->
 									<div class="symbol symbol-35px symbol-circle">
-										<img alt="Pic" src="{{('backend/media/avatars/150-15.jpg')}}" />
+										<img alt="Pic" src="{{asset('backend/media/avatars/150-15.jpg')}}" />
 									</div>
 									<!--end::Avatar-->
 									<!--begin::Details-->
@@ -3550,7 +3550,7 @@ License: For each use you must have a valid license purchased only from above li
 								<div class="d-flex align-items-center">
 									<!--begin::Avatar-->
 									<div class="symbol symbol-35px symbol-circle">
-										<img alt="Pic" src="{{('backend/media/avatars/150-8.jpg')}}" />
+										<img alt="Pic" src="{{asset('backend/media/avatars/150-8.jpg')}}" />
 									</div>
 									<!--end::Avatar-->
 									<!--begin::Details-->
@@ -3637,7 +3637,7 @@ License: For each use you must have a valid license purchased only from above li
 								<div class="d-flex align-items-center">
 									<!--begin::Avatar-->
 									<div class="symbol symbol-35px symbol-circle">
-										<img alt="Pic" src="{{('backend/media/avatars/150-6.jpg')}}" />
+										<img alt="Pic" src="{{asset('backend/media/avatars/150-6.jpg')}}" />
 									</div>
 									<!--end::Avatar-->
 									<!--begin::Details-->
@@ -3695,7 +3695,7 @@ License: For each use you must have a valid license purchased only from above li
 								<div class="d-flex align-items-center">
 									<!--begin::Avatar-->
 									<div class="symbol symbol-35px symbol-circle">
-										<img alt="Pic" src="{{('backend/media/avatars/150-7.jpg')}}" />
+										<img alt="Pic" src="{{asset('backend/media/avatars/150-7.jpg')}}" />
 									</div>
 									<!--end::Avatar-->
 									<!--begin::Details-->
@@ -3753,7 +3753,7 @@ License: For each use you must have a valid license purchased only from above li
 								<div class="d-flex align-items-center">
 									<!--begin::Avatar-->
 									<div class="symbol symbol-35px symbol-circle">
-										<img alt="Pic" src="{{('backend/media/avatars/150-17.jpg')}}" />
+										<img alt="Pic" src="{{asset('backend/media/avatars/150-17.jpg')}}" />
 									</div>
 									<!--end::Avatar-->
 									<!--begin::Details-->
@@ -3811,7 +3811,7 @@ License: For each use you must have a valid license purchased only from above li
 								<div class="d-flex align-items-center">
 									<!--begin::Avatar-->
 									<div class="symbol symbol-35px symbol-circle">
-										<img alt="Pic" src="{{('backend/media/avatars/150-10.jpg')}}" />
+										<img alt="Pic" src="{{asset('backend/media/avatars/150-10.jpg')}}" />
 									</div>
 									<!--end::Avatar-->
 									<!--begin::Details-->
@@ -3840,7 +3840,7 @@ License: For each use you must have a valid license purchased only from above li
 								<div class="d-flex align-items-center">
 									<!--begin::Avatar-->
 									<div class="symbol symbol-35px symbol-circle">
-										<img alt="Pic" src="{{('backend/media/avatars/150-17.jpg')}}" />
+										<img alt="Pic" src="{{asset('backend/media/avatars/150-17.jpg')}}" />
 									</div>
 									<!--end::Avatar-->
 									<!--begin::Details-->
@@ -4417,9 +4417,9 @@ License: For each use you must have a valid license purchased only from above li
 												<!--end::Input-->
 												<!--begin::Card logos-->
 												<div class="position-absolute translate-middle-y top-50 end-0 me-5">
-													<img src="{{('backend/media/svg/card-logos/visa.svg')}}" alt="" class="h-25px" />
-													<img src="{{('backend/media/svg/card-logos/mastercard.svg')}}" alt="" class="h-25px" />
-													<img src="{{('backend/media/svg/card-logos/american-express.svg')}}" alt="" class="h-25px" />
+													<img src="{{asset('backend/media/svg/card-logos/visa.svg')}}" alt="" class="h-25px" />
+													<img src="{{asset('backend/media/svg/card-logos/mastercard.svg')}}" alt="" class="h-25px" />
+													<img src="{{asset('backend/media/svg/card-logos/american-express.svg')}}" alt="" class="h-25px" />
 												</div>
 												<!--end::Card logos-->
 											</div>
@@ -4541,7 +4541,7 @@ License: For each use you must have a valid license purchased only from above li
 										<!--end::Description-->
 										<!--begin::Illustration-->
 										<div class="text-center px-4 py-15">
-											<img src="{{('backend/media/illustrations/sketchy-1/9.png')}}" alt="" class="mw-100 mh-300px" />
+											<img src="{{asset('backend/media/illustrations/sketchy-1/9.png')}}" alt="" class="mw-100 mh-300px" />
 										</div>
 										<!--end::Illustration-->
 									</div>

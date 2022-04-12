@@ -85,3 +85,8 @@ Route::post('/update-product', [ProductController::class, 'update_product']);
 
 Route::get('/active-product/{product_id}', [ProductController::class, 'active_product']);
 Route::get('/unactive-product/{product_id}', [ProductController::class, 'unactive_product']);
+
+
+// Order
+Route::get('/list-orders', [CheckoutController::class, 'list_orders']);
+Route::get('/view-order/{order_id}', [CheckoutController::class, 'view_order']);

@@ -112,7 +112,7 @@
                                                     <span class="amount">
                                                         @php
                                                         $subtotal = $cart->quantity * $cart->price;
-                                                        echo '$'.number_format($subtotal);
+                                                        echo '$'.number_format($subtotal,0);
                                                         @endphp
                                                     </span>
                                                 </td>
@@ -122,18 +122,18 @@
                                         <tfoot>
                                             <tr class="cart-subtotal">
                                                 <th>Cart Subtotal</th>
-                                                <td><span class="amount">${{number_format(Cart::getSubTotal())}}</span></td>
+                                                <td><span class="amount">${{number_format(Cart::getSubTotal(),0)}}</span></td>
                                             </tr>
                                             <tr class="cart-subtotal">
                                                 <th>Cart Tax</th>
-                                                <td><span class="amount">${{$tax->getCalculatedValue(Cart::getSubTotal())}}</span></td>
+                                                <td><span class="amount">${{number_format($tax->getCalculatedValue(Cart::getSubTotal()),0)}}</span></td>
                                             </tr>
                                             <tr class="order-total">
                                                 <th>Order Total</th>
                                                 <td><strong><span class="amount">
                                                             @php
-                                                            $total = Cart::getSubTotal() - $tax->getCalculatedValue(Cart::getSubTotal());
-                                                            echo $total;
+                                                            $total = Cart::getSubTotal() + $tax->getCalculatedValue(Cart::getSubTotal());
+                                                            echo number_format($total,0);
                                                             @endphp
                                                         </span></strong>
                                                 </td>
@@ -149,19 +149,25 @@
                                         <!-- ACCORDION START -->
                                         <h5>Direct Bank Transfer</h5>
                                         <div class="payment-content">
-                                            <label style="display:flex"><input type="checkbox" name="payment_option" value="Bank Transfer" style="margin-top:5px"> <p>Make your payment directly into our bank account. Please use your Order ID as the payment reference. Your order won’t be shipped until the funds have cleared in our account.</p></label>
+                                            <label style="display:flex"><input type="checkbox" name="payment_option" value="0" style="margin-top:5px">
+                                                <p>Make your payment directly into our bank account. Please use your Order ID as the payment reference. Your order won’t be shipped until the funds have cleared in our account.</p>
+                                            </label>
                                         </div>
                                         <!-- ACCORDION END -->
                                         <!-- ACCORDION START -->
                                         <h5>Cheque Payment</h5>
                                         <div class="payment-content">
-                                        <label style="display:flex"><input type="checkbox" name="payment_option" value="Cheque Payment" style="margin-top:5px"> <p>Please send your cheque to Store Name, Store Street, Store Town, Store State / County, Store Postcode.</p></label>
+                                            <label style="display:flex"><input type="checkbox" name="payment_option" value="1" style="margin-top:5px">
+                                                <p>Please send your cheque to Store Name, Store Street, Store Town, Store State / County, Store Postcode.</p>
+                                            </label>
                                         </div>
                                         <!-- ACCORDION END -->
                                         <!-- ACCORDION START -->
                                         <h5>PayPal</h5>
                                         <div class="payment-content">
-                                        <label style="display:flex"><input type="checkbox" name="payment_option" value="PayPal" style="margin-top:5px"><p>Pay via PayPal; you can pay with your credit card if you don’t have a PayPal account.</p></label>
+                                            <label style="display:flex"><input type="checkbox" name="payment_option" value="2" style="margin-top:5px">
+                                                <p>Pay via PayPal; you can pay with your credit card if you don’t have a PayPal account.</p>
+                                            </label>
                                         </div>
                                         <!-- ACCORDION END -->
                                     </div>

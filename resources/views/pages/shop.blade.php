@@ -9,8 +9,8 @@
                 <!-- breadcrumb-list start -->
                 <ul class="breadcrumb-list">
                     <li class="breadcrumb-item"><a href="/">Home</a></li>
-                    <li class="breadcrumb-item active">Shop 
-                        
+                    <li class="breadcrumb-item active">Shop
+
                     </li>
                 </ul>
                 <!-- breadcrumb-list end -->
@@ -129,11 +129,14 @@
                                                         <img class="primary-image" src="{{asset('uploads/product/'.$pro->product_image)}}" alt="{{$pro->product_image}}">
                                                     </a>
                                                     <div class="label-product label_new">New</div>
-                                                    <div class="action-links">
-                                                        <a href="cart.html" class="cart-btn" title="Add to Cart"><i class="icon-basket-loaded"></i></a>
+                                                    <form action="{{URL::to('/save-cart')}}" method="post" class=" action-links">
+                                                        @csrf
+                                                        <input type="hidden" class="input-text" name="quantity" value="1" title="Qty">
+                                                        <input type="hidden" name="product_id" value="{{$pro->product_id}}">
+                                                        <button type="submit" class="cart-btn" type="submit"><i class="icon-basket-loaded"></i></button>
                                                         <a href="wishlist.html" class="wishlist-btn" title="Add to Wish List"><i class="icon-heart"></i></a>
                                                         <a href="#" class="quick-view" title="Quick View" data-toggle="modal" data-target="#exampleModalCenter"><i class="icon-magnifier icons"></i></a>
-                                                    </div>
+                                                    </form>
                                                 </div>
                                                 <div class="product-caption">
                                                     <h4 class="product-name"><a href="{{URL::to('/detail-product/'.$pro->product_id)}}">{{$pro->product_name}}</a></h4>

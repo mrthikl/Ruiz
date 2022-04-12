@@ -95,10 +95,10 @@
                                 @foreach($cartCollection as $cart)
                                 <li class="cart-item">
                                     <div class="cart-image">
-                                        <a href="{{URL::to('/detail-product'.$cart->id)}}"><img alt="" src="{{asset('uploads/product/'.$cart->attributes->image)}}"></a>
+                                        <a href="{{URL::to('/detail-product/'.$cart->id)}}"><img alt="" src="{{asset('uploads/product/'.$cart->attributes->image)}}"></a>
                                     </div>
                                     <div class="cart-title">
-                                        <a href="{{URL::to('/detail-product'.$cart->id)}}">
+                                        <a href="{{URL::to('/detail-product/'.$cart->id)}}">
                                             <h4>{{$cart->name}}</h4>
                                         </a>
                                         <div class="quanti-price-wrap">
